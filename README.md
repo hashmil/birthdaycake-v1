@@ -10,7 +10,7 @@ This is an attempt to build that app.
 
 Made using PHP and mySQL. As you can see from the code, i'm a novice at this!
 
-Currently on Heroku - **[link to app](https://arcane-gorge-4537.herokuapp.com/)**
+Currently on Heroku - **[link to app](http://birthdaycakeeveryday.herokuapp.com/)**
 
 ----
 
