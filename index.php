@@ -28,9 +28,9 @@
             $location = mysql_result($result, $i, "location");
 
 
-            //$todaydate = date("d");
+            $todaydate = date("d");
             $todaymonth = date("m");
-            $todaydate = 9;
+            //$todaydate = 9;
 
             // Check today's date and month with database
             if ($date == $todaydate && $month == $todaymonth) {
