@@ -58,7 +58,7 @@
 
           // if no birthdays
           if ($bdayyes == false) {
-            '
+            echo '
             <div id="primaryContainer" class="primaryContainer clearfix">
               <div id="box" class="clearfix">
                 <p id="text">
