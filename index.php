@@ -11,7 +11,6 @@
 
       <?php
 
-
             include 'header.php';
 
             $query="SELECT * FROM bday";
@@ -29,12 +28,14 @@
             $location = mysql_result($result, $i, "location");
 
 
-            $todaydate = date("d");
+            //$todaydate = date("d");
             $todaymonth = date("m");
-            //$todaydate = 9;
+            $todaydate = 9;
 
             // Check today's date and month with database
             if ($date == $todaydate && $month == $todaymonth) {
+
+              // html within echo
               echo '
               <div id="primaryContainer" class="primaryContainer clearfix">
                 <div id="box" class="clearfix">
@@ -48,15 +49,25 @@
             </div>
               ';
 
-
               $bdayyes = true;
             }
 
             $i++;
 
           }
+
+          // if no birthdays
           if ($bdayyes == false) {
-            echo "No birthdays today.";
+            '
+            <div id="primaryContainer" class="primaryContainer clearfix">
+              <div id="box" class="clearfix">
+                <p id="text">
+                  <span id="textspan">No one was born today.</span>
+                  </p>
+
+              </div>
+          </div>
+            ';
           }
 
       ?>
